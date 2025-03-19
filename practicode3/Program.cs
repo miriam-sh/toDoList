@@ -7,7 +7,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ToDoDbContext>(options =>
-    options.UseMySql(Environment.GetEnvironmentVariable("CONNECTION_STRING"),
+    options.UseMySql(builder.Configuration.GetConnectionString("ToDoDB"),
     new MySqlServerVersion(new Version(9, 0, 0))));
 
 builder.Services.AddCors(options =>
