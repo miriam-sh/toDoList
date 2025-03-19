@@ -1,0 +1,119 @@
+.lor * {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lor .niceLink {
+    background-color: #194350;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+    font-size: larger;
+    height: max-content;
+    padding: 4% 4%;
+    margin: auto;
+    margin-left: 8%;
+}
+
+.lor .niceLink:hover{
+    background-color: #05A3B2;
+    color: #fff;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+
+.lor {
+    width: 700px;
+    margin: auto;
+    margin-left: -13%;
+    padding: 3%;
+    padding-bottom: 10%;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 25px;
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+
+.lor .loginOrRegisterLinks {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.lor .loginOrRegisterLinks .niceLink {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 5%;
+    background-color: #f1f1f1;
+    color: #194350;
+    box-shadow: none;
+}
+
+.lor .loginOrRegisterLinks .niceLink:hover {
+    transform: none;
+    transition: none;
+}
+
+.lor .loginOrRegisterLinks .active {
+    color: white;
+    background-color: #194350;
+}
+
+
+.lor .login,
+.register {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 25px;
+    margin-top: 5%;
+}
+
+.lor .form {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+}
+
+.lor .form .inputTextField {
+    margin-top: 1.4rem;
+}
+
+.lor #submitInput {
+    margin: auto;
+    margin-top: 1.4rem;
+    color: #194350;
+    border-color: #194350;
+    border-width: 0.1px;
+}
+
+.lor #submitInput:hover {
+    background-color: #194350;
+    color: white;
+}
+
+.roundButton {
+    display: block;
+}
+
+.roundButton svg {
+    fill: #194350;
+}
+
+.roundButton:hover svg {
+    fill: red;
+}
