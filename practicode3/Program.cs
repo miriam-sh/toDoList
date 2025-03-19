@@ -6,8 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-console.writeLine(Environment.GetEnvironmentVariable("CONNECTION_STRING"));
-
 builder.Services.AddDbContext<ToDoDbContext>(options =>
     options.UseMySql(Environment.GetEnvironmentVariable("CONNECTION_STRING"),
     new MySqlServerVersion(new Version(9, 0, 0))));
@@ -24,11 +22,11 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 
 app.UseCors("AllowAll");
 
