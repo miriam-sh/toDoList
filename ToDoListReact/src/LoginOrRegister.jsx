@@ -1,12 +1,16 @@
 import { NavLink, Outlet } from "react-router-dom"
-
+import "./style.css"
 
 
 export const LoginOrRegister = () => {
 
     return <>
-        <NavLink to={"login"}>כניסה</NavLink>
-        <NavLink to={"register"}>הרשמה</NavLink>
-        <Outlet></Outlet>
+        <div className="lor">
+            <div className="loginOrRegisterLinks">
+                <NavLink to={"login"} className={"niceLink"}>כניסה</NavLink>
+                <NavLink to={"register"} className={"niceLink"}>הרשמה</NavLink>
+            </div>
+            <Outlet></Outlet>
+        </div>
     </>
 }
