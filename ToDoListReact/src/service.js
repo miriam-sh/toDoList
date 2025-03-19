@@ -6,6 +6,7 @@ axios.interceptors.response.use(
   response => response,
   error => {
     console.error('Error occurred:', error.response ? error.response.data : error.message);
+    console.log(error.status);
     if (error.status == 401) {
       window.location.href = "/login"
     }
